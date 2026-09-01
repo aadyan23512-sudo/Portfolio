@@ -58,8 +58,10 @@ export default function Projects() {
                   ↗
                 </span>
               </div>
-              <h3>{p.title}</h3>
-              <a href={p.link}>{p.desc}</a>
+              <a href={p.link}>
+                <h3>{p.title}</h3>
+                <p>{p.desc}</p>
+              </a>
               <div className="projects__tags">
                 {p.tags.map((t) => (
                   <span className="tag" key={t}>
